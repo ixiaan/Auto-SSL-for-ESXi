@@ -126,7 +126,7 @@ fi
 
 #### 测试执行
 `/root/setup_esxi_ssl.sh`
-添加定时任务：
+#### 添加定时任务：
 执行 `crontab -e`，在末尾添加以下内容（建议每天凌晨 4:30 执行一次）：
 
 `30 4 * * * /bin/bash /root/setup_esxi_ssl.sh >> /var/log/esxi_ssl_cron.log 2>&1`
